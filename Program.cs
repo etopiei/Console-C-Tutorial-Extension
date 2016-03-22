@@ -6,17 +6,17 @@ namespace Console
 	class Rectangle
 	{
 
-		double length;
-		double width;
+		double clength;
+		double cwidth;
 
 		public void AcceptDetails() {
 			
-			length = 6;
-			width = 12;
+			clength = 6;
+			cwidth = 12;
 
 		}
 
-		public double CalculateArea() {
+		public double CalculateArea(double length, double width) {
 
 			return length * width; 
 
@@ -24,9 +24,9 @@ namespace Console
 
 		public void DisplayInfo () {
 
-			System.Console.WriteLine ("Length: {0}", length);
-			System.Console.WriteLine ("Width: {0}", width);
-			System.Console.WriteLine ("Area: {0}", CalculateArea());
+			System.Console.WriteLine ("Length: {0}", clength);
+			System.Console.WriteLine ("Width: {0}", cwidth);
+			System.Console.WriteLine ("Area: {0}", CalculateArea(clength,cwidth));
 
 
 		}
@@ -53,7 +53,7 @@ namespace Console
 
 			} else {
 
-				System.Console.WriteLine("WOW!");
+				System.Console.WriteLine("WAOOOOOW!");
 				System.Console.ReadLine ();
 
 			}
